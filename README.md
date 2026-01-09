@@ -1,17 +1,34 @@
-# Persami Misterius
+# Persami Misterius 🌲🔥
+**Reorientasi Edukasi Kepanduan melalui Media 3D Adventure-Puzzle**
 
-Persami Misterius adalah sebuah game 3D adventure-puzzle yang memadukan unsur
-edukasi kepramukaan dengan atmosfer misteri dan ketegangan. Pemain akan
-memasuki peran sebagai seorang anggota Pramuka yang harus bertahan hidup dan
-memecahkan teka-teki untuk melarikan diri dari hutan yang berubah menjadi angker
-setelah para pembina menghilang secara misterius.
+Proyek ini adalah tugas akhir mata kuliah **Pemrograman Berorientasi Objek (PBO)** - Prodi Pendidikan Multimedia UPI Cibiru. Game ini mengintegrasikan materi SKU Pramuka ke dalam simulasi survival 3D yang imersif.
 
-Game ini menekankan pada pemecahan masalah dan pengambilan keputusan di
-bawah tekanan. Setiap tantangan yang dihadapi pemain dirancang untuk menguji
-pengetahuan praktis kepramukaan, seperti membuat api, navigasi, identifikasi
-tumbuhan, dan kode morse. Genre utamanya adalah Educational Adventure dengan
-elemen survival horror yang ringan.
+---
 
-Genre: 3D Educational Adventure, Puzzle, Survival
-- Target Audience: Remaja (Usia 12+), Pecinta Game Edukasi dan Puzzle
-- Platform: Desktop (PC)
+## 🎮 Tentang Game
+"Persami Misterius" menceritakan tentang Hamzah, seorang anggota Pramuka yang terpisah dari rombongannya di Hutan Rimbawara. Untuk bertahan hidup dan keluar dari hutan, ia harus menyelesaikan tantangan praktis kepramukaan di bawah ancaman entitas misterius.
+
+### Fitur Utama:
+- **Digitalisasi SKU:** Teka-teki berbasis materi Pramuka (Api unggun, Navigasi, Morse).
+- **Thermal Survival:** Sistem suhu tubuh yang mengharuskan pemain tetap hangat.
+- **Atmospheric Horror:** Lingkungan hutan dinamis dengan sistem kabut dan audio spasial.
+
+---
+
+## 🛠️ Implementasi OOP (Object-Oriented Programming)
+Game ini dibangun dengan menerapkan prinsip dasar PBO:
+- **Encapsulation:** Perlindungan data pada variabel `currentTemperature` dan `missionProgress`.
+- **Inheritance:** Penggunaan `ItemObject.cs` sebagai parent class untuk item Wood, Oil, dan Match.
+- **Singleton Pattern:** Digunakan pada `GameManager.cs` untuk kontrol state global.
+- **State Pattern:** Mengatur perilaku AI "Shadow Entity" (Idle, Chasing, Retreating).
+
+---
+
+## 📁 Struktur Repositori
+```text
+Assets/
+├── _Scripts/         # Logika C# (Core, Gameplay, UI)
+├── Prefabs/          # Objek yang dapat digunakan kembali
+├── Scenes/           # Main Menu & Level Gameplay
+├── Materials/        # Texture & Visual Styling
+└── Docs/             # GDD, TDD, & Laporan Akhir
